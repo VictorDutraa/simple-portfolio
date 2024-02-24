@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -22,12 +22,12 @@ img {
 
 :root {
     --general-font: 24px;
-    --theme: #22D4FD;
+    --theme: #75f14e;
     --text-family: 'Montserrat', sans-serif;
     --text-color-footer: black;
-    --background-color: #272727;
-    --links-color: white;
-    --text-color: white;
+    --background-color: #000000;
+    --links-color: #75f14e;
+    --text-color: #ffffff;
     --titles-family: 'Krona One', sans-serif;
 }
 
@@ -95,6 +95,7 @@ img {
     font-size: var(--general-font);
     margin-top: 40px;
     text-align: center;
+    color: var(--theme);
 }
 
 .container__info__links__social{
