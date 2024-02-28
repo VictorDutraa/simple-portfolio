@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 
 * {
     margin: 0px;
@@ -11,6 +12,7 @@
 body{
     background-color: var(--background-color);
     color: var(--text-color);
+    background-image: url(assets/bg.jpg);
 }
 
 img {
@@ -21,14 +23,15 @@ img {
 }
 
 :root {
-    --general-font: 24px;
+    --general-font: 1.75rem;
     --theme: #75f14e;
-    --text-family: 'Montserrat', sans-serif;
+    --text-family: "Kode Mono", monospace;
     --text-color-footer: black;
     --background-color: #000000;
     --links-color: #75f14e;
     --text-color: #ffffff;
-    --titles-family: 'Krona One', sans-serif;
+    --titles-family: "Kode Mono", monospace;
+    --menu-color: #ECA400;
 }
 
 .container{
@@ -43,38 +46,32 @@ img {
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin-left: 360px;
-    margin-top: 65px;
-    width: 299px;
-    height: 29px;
-    font-weight: 600;
+    margin-left: 22.5rem;
+    margin-top: 4rem;
+    font-weight: 600px;
     font-family: var(--text-family);
     font-size: var(--general-font);
 }
 
 .buttons__options a{
-    color: var(--theme);
+    color: var(--menu-color);
     font-weight: 600px;
 }
 
 .buttons__options{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
-
-.container__info__firsthalf{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 593px;
-}
-
 
 .container__info__title{
     font-family: var(--titles-family);
-    font-size: 36px;
-    line-height: 56px;
-    font-weight: normal;
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    font-weight: 500;
+}
+
+.container__info__title__indented{
+    margin-left: 3.4rem;
 }
 
 .container__info__links{
@@ -117,18 +114,12 @@ img {
 
 .title_emphasis{
     color: var(--theme);
-    font-weight: normal;
-    
 }
 
 .icons{
     height: 32px;
     width: 32px;
     color: var(--theme);
-}
-
-#about-me-photo{
-    margin-top: 136px;
 }
 
 footer{
@@ -145,3 +136,15 @@ footer{
     background-color: var(--theme);
 }
 
+.aviso-mobile{
+    display: none;
+}
+
+@media(max-width: 870px){
+    .aviso-mobile{
+        font-family: var(--titles-family);
+        font-size: 2rem;
+        display: flex;
+        color: red;
+    }
+}
