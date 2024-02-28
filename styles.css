@@ -70,18 +70,11 @@ img {
 }
 
 
-.container__info__firsthalf__title{
+.container__info__title{
     font-family: var(--titles-family);
     font-size: 36px;
     line-height: 56px;
     font-weight: normal;
-}
-
-.container__info__firsthalf__introduction{
-    font-family: var(--text-family);
-    font-size: var(--general-font);
-    line-height: 36px;
-    margin-top: -6px;
 }
 
 .container__info__links{
@@ -122,8 +115,10 @@ img {
     background-color: var(--background-color);
 }
 
-#title_emphasis{
+.title_emphasis{
     color: var(--theme);
+    font-weight: normal;
+    
 }
 
 .icons{
