@@ -26,7 +26,7 @@ document.querySelectorAll('.container__start').forEach(item => {
       event.preventDefault();
       const target = document.querySelector('#tela-sobre-mim');
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
   });
