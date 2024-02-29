@@ -10,16 +10,17 @@
 
     <body>
 
-        <header class="buttons">
+        <header id="inicio" class="buttons">
             
             <nav class="buttons__options">
-                <a href="./index.html#indice">Home</a>
-                <a href="./index.html#indice">Projetos</a>
-                <a href="./index.html#indice">Sobre mim</a>
+                <a href="#">Home</a>
+                <a class="botao-projetos" href="./index.html#tela-previa-projetos">Projetos</a>
+                <a class="botao-sobre-mim" href="./index.html#tela-sobre-mim">Sobre mim</a>
             </nav>
 
         </header>
-            
+        
+        <!-- homepage -->
         <main class="container">
             <!-- div title-->
             <section class="container__info">
@@ -71,34 +72,188 @@
             </section>
 
             <!-- botao de começar que leva a meus projetos -->
-            <span
-            class="container__start"
-            >
-                <a href="index.html#tela-previa-projetos">
-                    Começar
-                </a>
-            </span>
+            <a class="container__start" href="index.html#tela-previa-projetos">
+                Começar
+            </a>
+            
            
         </main>
 
         <!-- tela prévia meus projetos -->
-        <!-- SUAVIZAR TRANSIÇÃO AO CLIQUE DE 'COMEÇAR' -->
         <section id="tela-previa-projetos" class="tela-meus-projetos">
             <h1>MEUS PROJETOS</h1>
-            <p>	&darr;</p>
+            <a class="button-to-first-project" href="index.html#first-project">
+                &darr;
+            </a>
         </section>
 
-        <!-- meus projetos em si -->
-        <section></section>        
+        <!-- devlinks -->
+        <section id="first-project" class="dev-links">
+            <h1>DEV-LINKS</h1>
+            
+            <div class="dev-links__conteudo">
+
+                <!-- paragrafos explicativos -->
+                <div class="dev-links__conteudo__explicacao">
+                    <p class="dev-links__conteudo__explicacao__principal">
+                        Um agregador de links com a finalidade de tornar a navegação entre suas redes mais fácil e prática para outras pessoas. Altere entre o modo claro e modo escuro!
+                    </p>
+
+                    <p class="dev-links__conteudo__explicacao__detalhes">
+                        Projeto desenvolvido com JavaScript, HTML e CSS, com a utilização de diversos conceitos importantes, tais como funções, DOM, alinhamentos, Flexbox, pseudo-classes, variáveis em CSS. 
+                    </p>
+                </div>
+
+                 <!-- video do projeto -->
+                 <iframe
+                  width="560" height="450" src="https://www.youtube.com/embed/KVjNuNKt3bw?rel=0?si=XG5y54WoQE6Mt74s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                 </iframe>
+
+                <!-- call to action -->
+                <div class="dev-links__conteudo__cta">
+
+                    <p>
+                        <a class="dev-links__conteudo__cta__link" target="_blank" href="https://victordutraa.github.io/dev-links/">
+                            Clique aqui para acessar o site
+                        </a>
+                    </p>
+
+                    <p> 
+                        <a class="dev-links__conteudo__cta__link" target="_blank" href="https://github.com/victordutraa/dev-links">
+                            Confira o repositório aqui
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <a class="button-to-second-project" href="index.html#second-project">
+                &darr;
+            </a>
+        </section>
+        
+        <!-- portfolio -->
+        <section id="second-project" class="portfolio">
+            <h1>PORTFOLIO</h1>
+
+            <div class="portfolio__conteudo">
+                <!-- paragrafos explicativos -->
+                <div class="portfolio__conteudo__explicacao">
+                    <p class="portfolio__conteudo__explicacao__principal">
+                        Principais projetos, informações acadêmicas e profissionais reunidos em um lugar só. Esse é o meu portfólio!
+                    </p>
+
+                    <p class="portfolio__conteudo__explicacao__detalhes">
+                        Projeto desenvolvido em HTML e CSS.
+                    </p>
+                </div>
+
+                <!-- foto do projeto -->
+                <img src="assets/portfolio.jpg" alt="foto da homepage do portfolio">
+
+                <!-- call to action -->
+                <div class="portfolio__conteudo__cta">
+                    <p> 
+                        <a class="portfolio__conteudo__cta__link" target="_blank" href="https://github.com/victordutraa/simple-portfolio">
+                            Confira o repositório aqui
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <a class="button-to-third-project" href="index.html#third-project">
+                &darr;
+            </a>
+
+        </section>
+
+        <!--pacman -->
+        <section id="third-project" class="pacman">
+            <h1>PACMAN</h1>
+
+            <div class="pacman__conteudo">
+                <!-- paragrafos explicativos -->
+                <div class="pacman__conteudo__explicacao">
+                    <p class="pacman__conteudo__explicacao__principal">
+                        O clássico, mas desafiador, Pacman. Agora, um pouco mais rústico - para os verdadeiros fãs.
+                    </p>
+
+                    <p class="pacman__conteudo__explicacao__detalhes">
+                        Projeto desenvolvido na linguagem C, que consiste na movimentação do personagem pelo mapa a fim de obter todas as pontuações ‘*’ sem colidir com os inquietos fantasmas representados por letras. Ao final do jogo, são gerados arquivos de estatísticas, resumo de jogadas e até mapa de calor!
+                    </p>
+                </div>
+
+                <!-- video do pacman -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yHIjuwmIi5U?rel=0?si=ik_cqCMtK-KXP30B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+                <!-- call to action -->
+                <div class="pacman__conteudo__cta">
+
+                    <p>
+                        <a class="pacman__conteudo__cta__link" target="_blank" href="assets/arquivos.jpg">Clique aqui para visualizar em uma nova guia os documentos gerados pelo jogo!</a>
+                    </p>
+
+                    <p> 
+                        <a class="pacman__conteudo__cta__link" target="_blank" href="https://github.com/victordutraa/pacman">
+                            Confira o repositório aqui
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+
+            <a class="button-to-final" href="index.html#tela-sobre-mim">
+                &darr;
+            </a>
+        </section>
+
+            
+        <!-- sobre mim -->
+        <section id="tela-sobre-mim" class="sobre-mim">
+            <h1>SAIBA MAIS SOBRE MIM</h1>
+
+            <!-- topicos --> 
+            <ul class="sobre-mim__lista">
+                <li>Cursando 3° período - Bacharelado em Ciência da Computação na Universidade Federal do Espírito Santo (UFES) </li>
+
+                <li>Técnico em Logística integrado ao ensino médio - Instituto Federal do Espírito Santo (IFES)</li>
+
+                <li>Formação ONE em Frontend - Oracle/Alura  (em andamento)</li>
+            </ul>
+            
+
+             <!-- call to action -->
+            <h2 class="sobre-mim__contact">Fale comigo</h2>
+
+            
+            <a class="sobre-mim__linkedin-button" href="https://linkedin.com/in/victor-dutra-de-jesus" target="_blank">
+
+                <ion-icon name="logo-linkedin" class="sobre-mim__linkedin-icon"></ion-icon>
+                LinkedIn
+                
+            </a>
+            
+            <!-- botao de retornar ao topo -->
+            <a href="index.html#inicio" class="sobre-mim__voltar-inicio">
+                &uarr;
+            </a>
+        </section>
+
 
         
-        <!-- <footer id="indice"> 
+
+ 
+        <footer id="indice"> 
             <p >Developed by VictorDutraa</p>
         </footer>
-        -->
+        
 
         <!-- icons importation -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        <script src="script.js"></script>
     </body>
+
+    
 </html>
