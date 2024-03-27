@@ -14,8 +14,8 @@ body{
     color: var(--text-color);
     background-image: url(assets/bg.jpg);
     background-repeat: no-repeat;
-    
-    
+    /* border: 2px solid red; */
+    width: 100%;
 }
 
 iframe {
@@ -78,15 +78,6 @@ iframe {
 
 .aviso-mobile{
     display: none;
-}
-
-@media(max-width: 870px){
-    .aviso-mobile{
-        font-family: var(--titles-family);
-        font-size: 2rem;
-        display: flex;
-        color: red;
-    }
 }
 
 .title_emphasis{
@@ -326,7 +317,6 @@ iframe {
     gap: 5rem;
     align-items: center;
     
-
     h1 {
         font-size: 2.6rem;
         font-family: var(--titles-family);
@@ -452,7 +442,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 16rem;
-    width: 118.96rem;
+    width: 100%;
     height: 3rem;
     font-weight: 400;
     font-family: var(--text-family);
@@ -460,3 +450,144 @@ footer{
     color: var(--text-color-footer);
     background-color: var(--theme);
 }
+
+/* ------------------------------------------ */
+
+@media(max-width: 1375px){
+
+    header{
+        margin-left: 0;
+    }
+
+    .buttons{
+        margin-top: 3rem;
+    }
+    
+    .buttons__options{
+        gap: 5rem;
+        margin-left: -15rem;
+    }
+
+    .container{
+        margin: 7rem auto;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .container__info__title{
+        font-size: 3.4rem;
+        margin-left: 6rem;
+    }
+
+    .tela-meus-projetos{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        background-color: black;
+        margin-top: -1.2rem;
+        gap: 15rem;
+        color: var(--menu-color);
+        font-family: var(--titles-family);
+        h1 {
+            font-weight: 700;
+        }
+        a {
+            color: var(--menu-color);
+        }
+    }
+
+    .dev-links__conteudo{
+        margin-left: 1rem;
+    }
+
+    .portfolio__conteudo{
+        margin: 0 1rem;
+    }
+
+    .portfolio__conteudo__explicacao {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        gap: 4rem;
+        width: 100%;
+
+    }
+
+    .portfolio__conteudo__explicacao__principal {
+        font-size: 2rem;
+    }
+
+    .portfolio__conteudo__cta{
+
+        margin-bottom: 3rem;
+        a {
+            color: var(--text-color);
+            font-weight: 700;
+        }
+    }
+
+    .pacman__conteudo{
+        
+        gap: 2rem;
+    }
+    
+    .pacman__conteudo__explicacao {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        gap: 2rem;
+        
+    }
+    
+    .pacman__conteudo__explicacao__principal {
+        font-size: 1.5rem;
+    }
+    
+    .pacman__conteudo__explicacao__detalhes {
+        color: var(--theme);
+        
+    }
+    
+    .pacman__conteudo__cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 3rem;
+        margin-bottom: 3rem;
+        width: 20rem;
+        a {
+            color: var(--text-color);
+            font-weight: 700;
+        }
+    }
+
+}
+
+@media(max-width: 1293px){
+    body{
+        width: 90vw;    
+    }
+    .tela-meus-projetos{
+        width: 100vw;
+    }
+    .dev-links{
+        margin-left: auto;
+        width: 100vw;
+    }
+    .dev-links__conteudo__cta{
+        width: 30%;
+    }
+    .pacman__conteudo{
+        width: 100%;
+    }
+    .pacman__conteudo__explicacao{
+        font-size: 1rem;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
